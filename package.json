@@ -1,0 +1,16 @@
+{
+  "name": "@atisio/lib-central-domain",
+  "version": "1.0.0",
+  "description": "Core package for shared domains which means central.",
+  "author": {
+    "name": "Adriano Ferreira",
+    "email": "adriano.ferreira@atis.io"
+  },
+  "license": "UNLICENSED",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "prepublish": "rm -Rf dist/* | tsc",
+    "postpublish": "git push origin develop"
+  }
+}
