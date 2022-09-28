@@ -22,8 +22,7 @@ export class User implements IUser {
     public defaultCompanyId?: string;
     public companies?: string[];
 
-    constructor();
-    constructor(_id: string = null) {
+    constructor(_id?: string) {
         this._id = _id;
     }
 
