@@ -5,20 +5,26 @@ import { OperatorType } from './operator-type.enum';
 
 // eslint-disable-next-line require-jsdoc
 export class User implements IUser {
-    name: string;
-    surname: string;
-    email: string;
-    username: string;
-    secret: string;
-    accessCondition: AccessCondition;
-    operatorType: OperatorType;
-    confirmed: boolean;
-    token: string;
-    key: string;
-    defaultCompanyId?: string;
-    companies?: string[];
-    _id: string;
-    createdOn: Date;
-    changedOn: Date;
-    signature: string;
+    public readonly _id: string;
+    public createdOn: Date;
+    public changedOn: Date;
+    public signature: string;
+    public name: string;
+    public surname: string;
+    public email: string;
+    public username: string;
+    public secret: string;
+    public accessCondition: AccessCondition;
+    public operatorType: OperatorType;
+    public confirmed: boolean;
+    public token: string;
+    public key: string;
+    public defaultCompanyId?: string;
+    public companies?: string[];
+
+    constructor();
+    constructor(_id?: string) {
+        this._id = _id;
+    }
+
 }

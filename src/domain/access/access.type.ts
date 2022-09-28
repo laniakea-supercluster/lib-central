@@ -23,20 +23,20 @@ export interface IAccessGroup extends IIdentifier<string>, ITrackable {
   components: IComponentPermission[];
 }
 
-export interface IUser extends IIdentifier<string>, ITrackable {
-  name: string;
-  surname: string;
-  email: string;
-  username: string;
-  secret: string;
-  accessCondition: AccessCondition;
-  operatorType: OperatorType;
-  confirmed: boolean;
-  token: string;
-  key: string;
-  defaultCompany?: string;
-  companies?: string[];
-}
+export interface IUser extends IIdentifier<string>, ITrackable {}
+  // name: string;
+  // surname: string;
+  // email: string;
+  // username: string;
+  // secret: string;
+  // accessCondition: AccessCondition;
+  // operatorType: OperatorType;
+  // confirmed: boolean;
+  // token: string;
+  // key: string;
+  // defaultCompany?: string;
+  // companies?: string[];
+
 
 export interface IProfile extends IUser {
   company: IEnterprise;
